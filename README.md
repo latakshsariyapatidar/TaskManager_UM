@@ -42,7 +42,7 @@ A sleek and responsive Task Management web application built using **HTML**, **C
 
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/your-username/to-do-app.git
+   git clone https://github.com/latakshsariyapatidar/TaskManager_UM.git
 2. Open index.html in your browser to start creating tasks.
 
 3. Navigate to look_tasks.html to view, edit, or manage tasks.
