@@ -19,21 +19,16 @@ A sleek and responsive Task Management web application built using **HTML**, **C
 - 🌗 Toggle Dark Mode for user preference
 - 💾 Persistent task data using `localStorage`
 
----
-
-## 📁 Project Structure
-
+```
 📦 to-do-app/
-├── index.html # Add Task page
-├── look_tasks.html # Task viewing, editing, deleting, and marking complete
-├── edit.html # Edit specific task
-├── style.css # Unified styling (responsive + dark mode)
-├── script.js # JavaScript logic for tasks
-├── edit.js # Script for handling task editing
-└── README.md # Project documentation
-
-
----
+├── index.html         # Add Task page
+├── look_tasks.html    # Task viewing, editing, deleting, and marking complete
+├── edit.html          # Edit specific task
+├── style.css          # Unified styling (responsive + dark mode)
+├── script.js          # JavaScript logic for tasks
+├── edit.js            # Script for handling task editing
+└── README.md          # Project documentation
+```
 
 ## 🛠️ Tech Stack
 
