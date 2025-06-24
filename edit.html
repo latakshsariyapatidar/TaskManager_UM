@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Task</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 id="h_text">Edit Task</h1>
+    
+    <form id="editForm">
+      <input type="text" id="edit_title" placeholder="Title" required />
+      <textarea id="edit_description" placeholder="Description" required></textarea>
+      <div id="otherContainer">
+        <input type="date" id="edit_due" />
+        <select id="edit_priority">
+          <option value="Important">Important</option>
+          <option value="Not Important">Not Important</option>
+        </select>
+      </div>
+      <input type="submit" value="Save Changes" id="save_task" />
+    </form>
+
+    <a id="tasks_ancor" href="/look_tasks.html">&larr; Back to Tasks</a>
+  </div>
+
+  <script src="edit.js"></script>
+</body>
+</html>

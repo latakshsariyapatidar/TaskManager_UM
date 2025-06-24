@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+        <h1 id="h_text">Task Management Console</h1>
+        
+        <div id="add_container">
+            <h1>Add Task</h1>
+
+            <form action="">
+                <input type="text" id="task_input" placeholder="Enter your task here...">
+                <textarea type="text" id="task_description" placeholder="Enter task description..."></textarea>
+                <div id="otherContainer">
+                    <input type="date" name="due_date" id="due_date">
+                    <select name="priority" id="priority">
+                        <option value="imp">Important</option>
+                        <option value="not_imp">Not Important</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Create Task" id="create_task">
+            </form>
+        </div>
+
+        <a id="tasks_ancor" href="/look_tasks.html"> <- Go to Tasks</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

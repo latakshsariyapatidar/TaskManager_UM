@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Playfair';
+    color: white;
+}
+
+.container{
+    min-height: 100%;
+    width: 100%;
+    background-color: #2c2c2c;
+}
+
+.container a{
+    text-decoration: none;
+    color: #5b5b5b;
+    font-size: 1.5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    position: relative;
+}
+
+#h_text{
+    font-size: 4vw;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    font-weight: 700;
+}
+
+#add_container{
+    height: fit-content;
+    width: 30%;
+    background-color: white;
+    margin: auto;
+    border-radius: 2vw;
+    padding: 1vw 0vw;
+}
+
+#add_container h1{
+    color: black;
+    text-align: center;
+    padding: 2vw;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+#task_input{
+    width: 80%;
+    height: 7vh;
+    margin: auto;
+    display: block;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    font-family: 'Playfair';
+    background-color: #d9d9d9;
+    border: none
+}
+
+#task_description{
+    width: 80%;
+    height: 25vh;
+    margin: auto;
+    display: block;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    font-family: 'Playfair';
+    background-color: #d9d9d9;
+    border: none;
+    margin-top: 10px;
+    padding: 1vw;
+    white-space: normal;
+    resize: none;
+}
+
+#otherContainer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#priority{
+    width: 48%;
+    height: 7vh;
+    margin: auto;
+    display: block;
+    padding-left: 1vw;
+    font-size: 1.3vw;
+    font-family: 'Playfair';
+    background-color: #d9d9d9;
+    border: none;
+}
+
+#due_date{
+    width: 48%;
+    height: 7vh;
+    margin: auto;
+    display: block;
+    padding-left: 1vw;
+    font-size: 1.3vw;
+    font-family: 'Playfair';
+    background-color: #d9d9d9;
+    border: none;
+}
+
+#create_task{
+    width: 40%;
+    height: 7vh;
+    margin: auto;
+    display: block;
+    font-size: 1.5vw;
+    font-family: 'Playfair';
+    background-color: #d9d9d9;
+    border: none;
+    color: black;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.task_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* background-color: red; */
+    gap: 2vw;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    white-space: normal;
+    height: 80%;
+}
+
+.task{
+    background-color: white;
+    padding: 1vw 3vw;
+    border-radius: 5px;
+    color: black;
+    max-height: fit-content;
+    max-width: 40%;
+}
+#detContainer{
+    display: flex;
+    width: 100%;
+    gap: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding-top: 10vw;
+    }
+    #add_container{
+        width: 90%;
+        
+    }
+    #h_text{
+        font-size: 6vw;
+        letter-spacing: 0px;
+    }
+    #add_container h1{
+        font-size: 5vw;
+        letter-spacing: 0px;
+    }
+    #task_input, #task_description, #create_task{
+        width: 90%;
+        font-size: 3vw;
+    }
+    #priority, #due_date{
+      width:47%;
+      font-size: 3vw;
+    }
+}
+
+.deleteBtn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background-color: darkred;
+}
+
+/* Responsive tweaks for task container and task items */
+.task_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    justify-content: center;
+}
+
+.task {
+    background-color: white;
+    padding: 4vw;
+    border-radius: 10px;
+    color: black;
+    width: 40%;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    word-wrap: break-word;
+}
+
+#detContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    #h_text {
+        font-size: 6vw;
+    }
+
+    .task {
+        width: 90%;
+        padding: 5vw;
+        font-size: 4vw;
+    }
+
+    .deleteBtn {
+        width: 100%;
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    #detContainer p {
+        font-size: 3.5vw;
+    }
+}
+
+/* Already existing delete button styling */
+.deleteBtn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: darkred;
+}
+
+.editBtn {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editBtn:hover {
+  background-color: #2b7abf;
+}
+/* ==== EDIT PAGE STYLING ==== */
+
+#editForm {
+  width: 30%;
+  min-width: 300px;
+  margin: 3vw auto;
+  background-color: white;
+  padding: 2vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+#edit_title,
+#edit_description,
+#edit_due,
+#edit_priority {
+  font-family: 'Playfair';
+  font-size: 1.2vw;
+  padding: 1vw;
+  background-color: #d9d9d9;
+  border: none;
+  color: black;
+}
+
+#edit_description {
+  resize: vertical;
+  min-height: 20vh;
+  white-space: normal;
+  resize: none;
+}
+
+#edit_priority,
+#edit_due {
+  width: 50%;
+}
+#edit_priority {
+  margin-right: 1vw;
+}
+
+#save_task {
+  width: 50%;
+  margin: 2vw auto 0;
+  font-family: 'Playfair';
+  font-size: 1.5vw;
+  font-weight: 700;
+  padding: 1vw;
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  border-radius: 0.6vw;
+  cursor: pointer;
+}
+
+#save_task:hover {
+  background-color: #c0c0c0;
+}
+
+#tasks_ancor {
+  display: block;
+  text-align: center;
+  margin-top: 2vw;
+  text-decoration: none;
+  color: #5b5b5b;
+  font-size: 1.5vw;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #editForm {
+    width: 90%;
+    padding: 5vw;
+  }
+
+  #edit_title,
+  #edit_description,
+  #edit_due,
+  #edit_priority {
+    font-size: 4vw;
+  }
+
+  #save_task {
+    font-size: 4vw;
+    width: 90%;
+    padding: 3vw;
+  }
+
+  #tasks_ancor {
+    font-size: 4vw;
+  }
+}
+
+.completed-task h1,
+.completed-task p,
+.completed-task #detContainer {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.completeCheck {
+  transform: scale(1.5);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
